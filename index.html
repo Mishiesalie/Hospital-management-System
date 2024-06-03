@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hospital Management System</h1>
+
+    <section>
+        <h2>Patient Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="medicalHistory">Medical History:</label>
+            <textarea id="medicalHistory" name="medicalHistory" required></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Schedule an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="doctorName">Doctor Name:</label>
+            <input type="text" id="doctorName" name="doctorName" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Patient Medical Records</h2>
+        <form id="recordForm">
+            <label for="patientId">Patient ID:</label>
+            <input type="text" id="patientId" name="patientId" required>
+            <button type="submit">Retrieve Records</button>
+        </form>
+        <div id="records">
+            <h3>Medical records</h3>
+            <!-- Medical records will be displayed here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
